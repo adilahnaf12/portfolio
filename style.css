@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.body{
+  background-image: url("Sg75kA.jpg");
+  background-size: cover;
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  height: 625px;
+}
+.container{
+  width: 90%;
+  margin: 10px 5% 0px 5%;
+  display: flex;
+  
+}
+.active{
+  background-color: red !important;
+ 
+  
+}
+.active_olio{
+  color: white !important;
+}
+.active_olio:hover{
+  color: black !important;
+}
+.header{
+  position: fixed;
+  width: 100%;
+  margin: 0px 0% 0px 0%;
+  z-index: 999;
+  background-color: transparent;
+}
+.header .logo span{
+  color: red;
+}
+.header .logo{
+  color: white;
+  width: 20%;
+  font-size: 40px;
+  font-family: Pushster;
+}
+.header .nav{
+  
+  width: 80%;
+
+}
+.header ul{
+  margin: 13px 0% 10px 55%;
+}
+.header ul li{
+  list-style: none;
+  display: inline;
+  font-family: mukta;
+  margin-left: 16px;
+}
+.header ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  
+}
+.header ul li a:hover{
+  color: rgb(255 0 0);
+  transition: .4s;
+}
+.body_section{
+  width: 90%;
+  margin: 180px 5% 180px 5%;
+  position: absolute;
+}
+.body_section .hello{
+  color: white;
+  font-family: Pushster;
+  font-size: 30px;
+}
+.body_section .name{
+  color: white;
+  font-family: mukta;
+  font-size: 50px;
+  font-weight: bold;
+}
+.body_section .skill{
+  color: white;
+  font-family: mukta;
+  font-size: 28px;
+}
+.body_section .skill span::before {
+  content: "Full-Stack Web Developer";
+ 
+  animation: animate infinite 3s;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.body_section .skill span::before {
+  color: white;
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: white;
+    content: Developer;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: rgb(255, 0, 0);
+  }
+}
+.info .about{
+  font-family: mukta;
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+  margin: 79px 0% 0px 0%;
+}
+.info .who{
+  font-size: 20px;
+  overflow: hidden;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  font-family: mukta;
+}
+.who:before,
+.who:after {
+  background-color: #000;
+  content: "";
+  margin: 0px .5%;
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 2%;
+  font-weight: bold;
+}
+.info_me{
+  font-size: 25px;
+  font-family: mukta;
+}
+
+.line-1{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+.info_pic,.info_about,.map,.contact_form{
+  opacity: 0;
+}
+
+.animate__animated{
+  opacity: 1;
+}
+.services{
+  background-color: black;
+}
+.service_cart{
+  background-color: #100f0f;
+}
+.service_head{
+  color: red;
+}
+.skills{
+  width: 38%;
+  margin: 0px 28%;
+}
+.contact{
+  background-color: aliceblue;
+}
+.map{
+  width: 50%;
+}
+.map_location{
+  margin: 0px 9% 0px -55%;
+}
+.contact_form{
+  padding: 21px 4%;
+  width: 40%;
+}
+footer{
+  background-color: red;
+  color: white;
+}
+.develop{
+  color: white;
+}
+.develop a{
+  color: rgb(240, 234, 234);
+}
+.footer_logo{
+  color: white;
+}
